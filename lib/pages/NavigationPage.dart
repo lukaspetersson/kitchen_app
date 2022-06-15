@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 // Import bottom navigation pages
 import 'package:kitchen_app/pages/navPages/nav1.dart';
-import 'package:kitchen_app/pages/navPages/nav2.dart';
+import 'package:kitchen_app/pages/navPages/InventoryPage.dart';
+import 'package:kitchen_app/pages/navPages/RecipePage.dart';
+import 'package:kitchen_app/pages/navPages/ShoppingPage.dart';
 
 class PageInfo {
   PageInfo({required this.title, required this.icon, required this.page})
@@ -16,13 +18,15 @@ class PageInfo {
 class NavigationPage extends StatefulWidget {
   static List<PageInfo> pages = <PageInfo>[
     PageInfo(
-        title: "nav1",
-        icon: Icon(Icons.fingerprint),
-        page: nav1(title: "nav1 title")),
+        title: "Recipies", icon: Icon(Icons.fingerprint), page: RecipePage()),
     PageInfo(
-        title: "nav2",
+        title: "Inventory",
         icon: Icon(Icons.fingerprint),
-        page: nav2(title: "nav2 title"))
+        page: ShoppingPage()),
+    PageInfo(
+        title: "Shopping",
+        icon: Icon(Icons.fingerprint),
+        page: InventoryPage()),
   ];
 
   @override
