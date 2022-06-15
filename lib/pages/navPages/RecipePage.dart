@@ -9,27 +9,21 @@ class _RecipePageState extends State<RecipePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Recipe"),
-      ),
       body: Center(
           child: ListView(
         padding: const EdgeInsets.all(8),
         children: <Widget>[
           Container(
             height: 50,
-            color: Colors.amber[600],
-            child: const Center(child: Text('Entry A')),
+            child: const Center(child: Text('recipe A')),
           ),
           Container(
             height: 50,
-            color: Colors.amber[500],
-            child: const Center(child: Text('Entry B')),
+            child: const Center(child: Text('recipe B')),
           ),
           Container(
             height: 50,
-            color: Colors.amber[100],
-            child: const Center(child: Text('Entry C')),
+            child: const Center(child: Text('recipe C')),
           ),
         ],
       )),
